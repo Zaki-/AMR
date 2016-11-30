@@ -4,11 +4,15 @@ Building a Python module
 
 Turning C code into a Python module is also easy. Simply do the following (shown for Irix, see the SWIG Wiki Shared Libraries page for help with other operating systems):
  <p>
- unix % swig -python example.i
+ unix % swig -python example.i 
+ 
  unix % gcc -c example.c example_wrap.c \
         -I/usr/local/include/python2.1
+        
  unix % ld -shared example.o example_wrap.o -o _example.so 
- 
+ </p>
+<p>
+
  
 We can now use the Python module as follows :
  >>> import example

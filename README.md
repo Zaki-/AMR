@@ -9,6 +9,7 @@ Turning C code into a Python module is also easy. Simply do the following (shown
         -I/usr/local/include/python2.1
  unix % ld -shared example.o example_wrap.o -o _example.so 
  
+ 
 We can now use the Python module as follows :
  >>> import example
  >>> example.fact(5)

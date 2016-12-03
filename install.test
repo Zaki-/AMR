@@ -1,0 +1,3 @@
+swig -c++ -python filename.i
+g++ -c -fPIC code_wrap.cxx  -I/usr/include/python2.7 -I/usr/lib/python2.7
+

@@ -1,3 +1,6 @@
 swig -c++ -python filename.i
 g++ -c -fPIC code.cpp code_wrap.cxx  -I/usr/include/python2.7 -I/usr/lib/python2.7
 g++ -shared -Wl,-soname,_code.so -o _code.so code.o code_wrap.o
+
+source:
+http://stackoverflow.com/questions/145270/calling-c-c-from-python
